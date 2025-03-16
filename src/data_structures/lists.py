@@ -101,3 +101,47 @@ print("clear1", list_clear)
 another_way = [1, 2, 3, 4, 5]
 another_way[:] = []
 print("clear2", another_way)
+
+#test
+test_list = [1, 2, 3, 4, 5]
+print(test_list[:])
+print(test_list[:len(test_list)])
+print(test_list[:-1])
+
+#list.count(x) counts the number of x in the list
+count_list = [1, 2, 1, 2, 3, 4, 1]
+print(count_list.count(1))
+print(count_list.count(2))
+
+#list.reverse()
+lsit = ["Prnail", "Parajuli"]
+lsit.reverse()
+print(lsit)
+
+#copy list.copy
+og_list = [1, 2, 3, 4, 5]
+copy_list = og_list.copy()
+print(id(og_list) == id(copy_list)) #gives false
+
+copy_list[:] = [1, 2]
+print(og_list)  #doesnt change because it is shallow copy
+print(copy_list)
+
+#list.sort()
+def my_func(e):
+    return len(e) 
+
+non_sorted = [33, 42, 12, 100, 43, 1]
+non_sorted.sort(reverse=True)
+print(non_sorted)
+non_sorted.sort()
+print(non_sorted)
+
+non_sorted_string = ["car", "donkey", "kathmandu"]
+non_sorted_string.sort(reverse=False, key=my_func)  #key specifies the criteria
+print(non_sorted_string)
+
+#list.index(x[, start[, end]])
+fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'banana', 'apple', 'banana']
+search_index = fruits.index('banana', 4)    #find next banana starting at position 4
+print(search_index)
