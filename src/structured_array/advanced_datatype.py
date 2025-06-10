@@ -31,5 +31,11 @@ print(score_greater_than_4)
 #iteration
 for row in data3:
     print(row['name'], row['score'])
-    
-    
+
+data_type3 = np.dtype([('name', 'U10'), ('Roll number', 'i4'), ('Subject', 'U10')])
+data3 = np.array([('Pranil', 60, 'Maths'), ('AG', 90, 'Maths')], dtype=data_type3)
+print(data_type3.names) #displaying the structured datatypes
+print(data3)
+
+print(data_type3['name'])
+print(data_type3.fields)
