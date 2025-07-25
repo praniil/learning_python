@@ -1,7 +1,5 @@
 #element wise arithmetic operation
-
 import numpy as np
- 
 a = np.arange(0, 4)
 b = np.arange(4)
 print(a - b)
@@ -37,3 +35,13 @@ yo = test_array.reshape(3, -1)
 print(yo)
 print(test_array.shape)
 print(yo.shape)
+
+#min, max, sum
+any_array = np.arange(10).reshape(2, 5)
+print(any_array)
+print(np.sum(any_array))
+print(np.min(any_array))
+print(np.max(any_array))
+
+cumulative_array = np.cumsum(any_array)
+print(cumulative_array)     #cumulative sum of elements
