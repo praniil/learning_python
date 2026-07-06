@@ -16,3 +16,9 @@ empty = ()
 singletup = ('hello',)
 print(len(empty))
 print(len(singletup))
+
+test_tuple = 1, 2, 3, 4
+print(test_tuple)
+
+x, y, z, a = test_tuple
+print(x, y, z, a)
