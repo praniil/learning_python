@@ -25,3 +25,7 @@ child2 = Child2("CHILD2")
 
 print(child.name)
 print(child2.name)
+
+#we can dynamically add attribute
+child.age = 20
+print(child.age)
