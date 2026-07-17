@@ -29,3 +29,7 @@ print(child2.name)
 #we can dynamically add attribute
 child.age = 20
 print(child.age)
+print(child.__dict__)
+print(Parent.__dict__)
+print(Child.__dict__)
+print(Child2.__dict__)
