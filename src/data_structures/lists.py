@@ -202,5 +202,6 @@ iter_list = [1, 2, 3, 4, "pranil"]
 for i in iter_list:
     print(i) #gives the item not the index
 
+# iterate
 for (i, v) in enumerate(iter_list):
     print(f"iter_list[{i}] = {v}")
